@@ -38,6 +38,7 @@ class Encrypter:
 
 
 if __name__ == '__main__':
+    # these are just for tests. To see the real encryption look at dbmanager
     content = '898e6d0eacce4fbfac976dbdc29e30b0'
     en1 = Encrypter('08724a9cd8ef4cd3b08d27682c6fc58a')
     encrypted1 = en1.encrypt(content)
