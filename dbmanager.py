@@ -51,8 +51,8 @@ class Database:
 
     def save_data(self, data, username, password):
         """
-         Saves the data encrypted.
-         Encryption key is common but decrypted by user key
+         Saves encrypted data.
+         Encryption key is common to everyone - decrypted by user key
         :param data:
         :param username:
         :param password:
@@ -96,8 +96,8 @@ class Database:
 
     def rotate_data(self,username,password):
         """
-        This will clear all existing user key and content keys. Will generate new keys and
-        encrypt data based on the new keys.
+        This will clear all existing user and content keys. Will generate new keys and
+        encrypt data based on new keys.
         :param username:
         :param password:
         :return:
